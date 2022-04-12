@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap");
+
+:root{
+    background-color: #ffffff;
+    --coloRojo:rgb( 242, 95, 58); 
+    --colorNegro: #1E1E26;
+    --colorAzul: #232C50;
+
+
+        
+}
+
+html{font-size: 62,5%;
+    padding: 0px;
+    margin: 0px;}
+
+.headerr{display: flex;
+justify-content: space-around;}
+
+.listita{display: flex;
+    gap:20px;
+    font-family: "Be Vietnam Pro";
+    font-weight: bold;
+}
+
+.encabezado{display: flex;
+
+}
+
+.logo {display: flex;
+    position: relative;
+margin-top: 20px ;}
+
+.button1{
+    font-family: "Be Vietnam Pro";
+    display: flex;
+background-color:var(--coloRojo);
+border-radius: 20%;
+color:white;
+padding: 0.5em;
+text-decoration: none;
+margin-top: 0.5em;
+}
+
+.button2{
+    font-family: "Be Vietnam Pro";
+    background-color: var(--coloRojo);
+    border-radius: 20%;
+    color: white;
+    display: flex;
+position: relative;
+text-decoration: none;
+padding: 0.5em;
+margin-top: 0.5em;
+top: 55em;
+right: 22em;
+}
+
+a{text-decoration: none;}
+
+.left{
+
+    font-family: "Be Vietnam Pro";
+    font-size: 2rem;
+    font-weight: 1,75rem;
+    line-height: 1,12rem;
+    letter-spacing: -0.035em;
+    text-align: left;
+    font-weight: bold;
+    color:var(--colorAzul)
+
+    }
+
+    .mid{display: flex;
+    justify-content: space-around;}
+
+.medium{
+    font-size: 1em;
+    font-family: "Be Vietnam Pro";
+    display: flex;
+    position: relative;
+    top: 31em;
+    right: 15em;
+}
+
+
+
+
+
