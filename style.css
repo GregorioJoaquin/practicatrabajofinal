@@ -1,5 +1,6 @@
 /* Fuente Be Vietnam Pro*/
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap");
+
 /* Raíz y variables*/
 :root {
   background-color: #ffffff;
@@ -8,12 +9,45 @@
   --colorAzul: #232c50;
   --colorGrey: #b3b2b7;
 }
+
+/* RESETEO DE ESTILOS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Be Vietnam Pro";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
 a {
   text-decoration: none;
 }
+
 /* Pseudo elementos/selectores y animaciones */
 a:active {
-  color: yellowgreen;
+  color: rgb(166, 166, 166);
 }
 
 input:focus {
@@ -26,18 +60,16 @@ input:focus {
   font-size: 0.8em;
 }
 
-h1::first-letter {
-  font-size: 2.2em;
-}
-
 @keyframes logo {
   0% {
     opacity: 0%;
   }
+
   25% {
     transform: translateY(-1.2em);
     opacity: 100%;
   }
+
   100% {
     opacity: 0;
   }
@@ -47,29 +79,7 @@ h1::first-letter {
   animation: logo 3s infinite;
 }
 
-/* margen,padding y fuente */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  font-size: 62, 5%;
-  height: 100%;
-  font-family: "Be Vietnam Pro";
-}
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
 /* lista NavBar, boton y logo del header */
 
 .headerr {
@@ -88,14 +98,8 @@ h6 {
   font-weight: bold;
 }
 
-.encabezado {
-  display: flex;
-}
-
-.logo {
-  display: flex;
-  position: relative;
-  margin-top: 1.25em;
+.listita a:hover {
+  color: #b3b2b7;
 }
 
 .button1 {
@@ -134,11 +138,12 @@ h6 {
   display: flex;
   width: 40vw;
 }
+
 .segundoencabezado {
   font: 700 2.25rem/2.57rem "Be Vietnam Pro";
   color: #232851;
   text-align: center;
-    width: 50vw;
+  width: 50vw;
 }
 
 .se2 {
@@ -152,7 +157,7 @@ h6 {
   align-content: flex-start;
   align-items: flex-start;
   width: 40vw;
-  
+
 }
 
 .left p {
@@ -162,7 +167,10 @@ h6 {
 
 .mid {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .medium {
@@ -171,6 +179,11 @@ h6 {
   position: relative;
   top: 31em;
   right: 15em;
+}
+
+.grafico {
+  width: 100%;
+  height: auto;
 }
 
 /*Botones del mid */
@@ -182,21 +195,18 @@ h6 {
   align-items: center;
   padding: 0.62em 1.56em;
   color: white;
-  position: static;
   width: 4.3em;
   height: 2.68em;
-  right: 30.25em;
-  top: 0em;
   background: #f3603b;
   border-radius: 1.85em;
-  order: 0;
-  flex-grow: 0;
-  margin: 0em 1.43em;
 
+}
+
+.tituloDescripcion {
   display: flex;
-  position: relative;
-  right: 6em;
-  top: 2em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .flexing {
@@ -237,6 +247,7 @@ h6 {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  padding-bottom: 5em;
 }
 
 .titulito2 {
@@ -264,7 +275,7 @@ h6 {
   width: 8.37em;
   height: 2.75em;
   right: 39em;
-  top: 110em;
+  top: 98em;
   text-decoration: none;
   background: #f3603b;
   box-shadow: 0em 0.25em 0.5em rgba(243, 96, 59, 0.5);
@@ -273,13 +284,14 @@ h6 {
 
 /*Footers, estilo de logo, botones, fontawesome y formulario*/
 
-.footer1 {
+.secction {
   background-color: var(--coloRojo);
   width: 100%;
   height: 14em;
   display: flex;
   justify-content: space-between;
 }
+
 .descript {
   font: 700 2.5rem/3rem "Be Vietnam Pro";
   color: white;
@@ -303,7 +315,7 @@ h6 {
   width: 8.37em;
   height: 2.75em;
   right: 5em;
-  top: 120em;
+  top: 107em;
   text-decoration: none;
   background: #ffffff;
   box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.25);
@@ -327,7 +339,7 @@ h6 {
   display: flex;
   position: relative;
   top: 10em;
- 
+
 }
 
 .footerlista {
@@ -375,8 +387,8 @@ input {
   font: 500 0.82rem/1.2rem "Be Vietnam Pro";
   width: 4em;
   height: 3em;
-  left: 7.8em;
-  bottom: 5em;
+  right: 11.2em;
+  bottom: 9em;
   text-decoration: none;
   background: #f3603b;
   box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.25);
@@ -396,16 +408,139 @@ input {
 }
 
 @media only screen and (max-width: 700px) {
+
   .listita,
   .button1 {
     display: none;
   }
-   
-.burguer{display: flex;}  
-.headerr{display:flex;
-flex-direction: row;}
-.mid {flex-direction: column-reverse;}
-.flexing{flex-direction: column;}
-.nomostrar{display: none;}
-  
+
+  .burguer {
+    display: flex;
+  }
+
+  .headerr {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mid {
+    flex-direction: column-reverse;
+  }
+
+  .flexing {
+    flex-direction: column;
+  }
+
+  .nomostrar {
+    display: none;
+  }
+
+  .left,
+  .midtown,
+  .se2,
+  .segundoencabezado {
+    width: 95vw;
+  }
+
+  .tituloDescripcion {
+    background-color: #dc9b9b76;
+    border-radius: 1.85em 0 0 1.85em;
+  }
+
+  .tarjeta {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b3b2b72f;
+  }
+  .tarjeta img{
+    position: relative;
+    bottom: 70px;
+  }
+
+  .titulito2 {
+    width: 90vw;
+    height: auto;
+  }
+
+  .divisorio,.texto, .perfiles, .tarjeta{ padding:0.3em}
+
+  .tarjeta{padding-bottom: 4.5em;}
+
+  .descript{
+    width: 77vw;
+justify-content: center;
+text-align: center;
+align-items: center;}
+
+    .button4{position: absolute;
+        right: 18.1em;
+    top: 110em;
+   }
+
+   .button5{position: absolute;
+right: 2em;
+top: 120em}
+
+.button6{position: relative;
+right: 5.8em;
+bottom: 16.5em;}
+
+.formulario{position: relative;
+top: -4em;
+right: 4.5em;}
+
+.redes{    display: flex;
+    position: relative;
+    top: 7.3em;
+    left: 15em;
+gap: 7.3em;}
+
+.footerlista{gap: 2em;}
+
+    .copyright{
+    
+    position: relative;
+    right:5em;
+top: 9.6em;
+    }
+
+.logo2 {
+    position: relative;
+    top:11.8em;
+    left:16.5em;}
+
+    .footer2{height:18em;}
+
+}
+   /*SEGUNDA MEDIA QUERY*/
+@media only screen and (max-width: 375px)
+{
+.button4 { position:relative;
+    top: 9em;
+right: 15.2em;}
+
+.button5{position: relative;
+top: 2em;
+left:6em;}
+
+.button6{position: relative;
+right: 1.5em;
+bottom: 15em;}
+
+.nostyle{position: relative;
+right: 5.4em;}
+
+.logo2{position:relative;
+left: 6em;}
+
+.copyright{
+top: 8.2em;
+right: 2em;}
+
+.footer2{height: 18em;}
+
+
 }
